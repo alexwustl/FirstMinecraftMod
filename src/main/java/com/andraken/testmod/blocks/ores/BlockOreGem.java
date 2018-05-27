@@ -30,15 +30,11 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockOreGem extends BlockBase{
-	/**
-	 * This describes a basic gem block that can take on six different colors. Heavily influenced by the BlockPlanks class from minecraft. The goal of this class is to learn more about metadata.
-	 */
-	public static final PropertyEnum<BlockGem.EnumType> VARIANT = PropertyEnum.<BlockGem.EnumType>create("variant", BlockGem.EnumType.class);
-
+	
 	public BlockOreGem(String name) {
 		super(name, Material.IRON,CreativeTab.modTab);
 
-		this.setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, BlockGem.EnumType.BLUE));
+		this.setDefaultState(this.blockState.getBaseState().withProperty(BlockGem.VARIANT, BlockGem.EnumType.BLUE));
 
 		setSoundType(SoundType.STONE)
 		.setHardness(3.0F)
@@ -61,7 +57,7 @@ public class BlockOreGem extends BlockBase{
 
 	public int damageDropped(IBlockState state)
 	{
-		return ((BlockGem.EnumType)state.getValue(VARIANT)).getMetadata();
+		return ((BlockGem.EnumType)state.getValue(BlockGem.VARIANT)).getMetadata();
 	}
 
 	/**
@@ -81,7 +77,7 @@ public class BlockOreGem extends BlockBase{
 	 */
 	public IBlockState getStateFromMeta(int meta)
 	{
-		return this.getDefaultState().withProperty(VARIANT, BlockGem.EnumType.byMetadata(meta));
+		return this.getDefaultState().withProperty(BlockGem.VARIANT, BlockGem.EnumType.byMetadata(meta));
 	}
 
 	/**
@@ -89,7 +85,7 @@ public class BlockOreGem extends BlockBase{
 	 */
 	public MapColor getMapColor(IBlockState state, IBlockAccess worldIn, BlockPos pos)
 	{
-		return ((BlockGem.EnumType)state.getValue(VARIANT)).getMapColor();
+		return ((BlockGem.EnumType)state.getValue(BlockGem.VARIANT)).getMapColor();
 	}
 
 	/**
@@ -97,12 +93,12 @@ public class BlockOreGem extends BlockBase{
 	 */
 	public int getMetaFromState(IBlockState state)
 	{
-		return ((BlockGem.EnumType)state.getValue(VARIANT)).getMetadata();
+		return ((BlockGem.EnumType)state.getValue(BlockGem.VARIANT)).getMetadata();
 	}
 
 	protected BlockStateContainer createBlockState()
 	{
-		return new BlockStateContainer(this, new IProperty[] {VARIANT});
+		return new BlockStateContainer(this, new IProperty[] {BlockGem.VARIANT});
 	}
 
 	@SideOnly(Side.CLIENT)
