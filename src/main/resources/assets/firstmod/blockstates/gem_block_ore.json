@@ -1,0 +1,32 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "firstmod:gem_block_ore",
+		"textures": {
+			"base": "minecraft:blocks/stone",
+			"all": "firstmod:blocks/gem_block_ore"
+		}
+	},
+	"variants": {
+		"variant": {
+			"red": {
+				
+			},
+			"green": {
+				
+			},
+			"blue": {
+				
+			},
+			"yellow": {
+				
+			},
+			"white": {
+			
+			},
+			"black": {
+			
+			}
+		}
+	}
+}

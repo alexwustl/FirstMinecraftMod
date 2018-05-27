@@ -1,0 +1,25 @@
+tile.gem_block_ore.name=Gem Ore
+tile.gem_block_ore.red.name=Red Gem Ore
+tile.gem_block_ore.blue.name=Blue Gem Ore
+tile.gem_block_ore.yellow.name=Yellow Gem Ore
+tile.gem_block_ore.green.name=Green Gem Ore
+tile.gem_block_ore.white.name=White Gem Ore
+tile.gem_block_ore.black.name=Black Gem Ore
+
+tile.gem_block.name=Gem Block
+tile.gem_block.red.name=Red Gem Block
+tile.gem_block.blue.name=Blue Gem Block
+tile.gem_block.yellow.name=Yellow Gem Block
+tile.gem_block.green.name=Green Gem Block
+tile.gem_block.white.name=White Gem Block
+tile.gem_block.black.name=Black Gem Block
+
+item.gem.name=Gem
+item.gem.red.name=Red Gem
+item.gem.blue.name=Blue Gem
+item.gem.green.name=Green Gem
+item.gem.yellow.name=Yellow Gem
+item.gem.white.name=White Gem
+item.gem.black.name=Black Gem
+
+itemGroup.item_tab_first_mod=First Mod

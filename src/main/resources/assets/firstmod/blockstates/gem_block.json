@@ -1,0 +1,31 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "firstmod:gem_block",
+		"textures": {
+			"all": "firstmod:blocks/gem_block"
+		}
+	},
+	"variants": {
+		"variant": {
+			"red": {
+				
+			},
+			"green": {
+				
+			},
+			"blue": {
+				
+			},
+			"yellow": {
+				
+			},
+			"white": {
+			
+			},
+			"black": {
+			
+			}
+		}
+	}
+}
