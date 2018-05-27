@@ -1,0 +1,12 @@
+com.andraken.testmod
+com.andraken.testmod.blocks
+com.andraken.testmod.blocks.colors
+com.andraken.testmod.blocks.ores
+com.andraken.testmod.init
+com.andraken.testmod.interfaces
+com.andraken.testmod.items
+com.andraken.testmod.items.colors
+com.andraken.testmod.proxy
+com.andraken.testmod.util
+com.andraken.testmod.util.handlers
+com.andraken.testmod.worldgen

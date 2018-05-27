@@ -144,7 +144,7 @@ public class BlockGem extends BlockBase{
         }
 
         /**
-         * The color which represents this entry on a map.
+         * @return The color which represents this entry on a map.
          */
         public MapColor getMapColor()
         {
@@ -168,7 +168,7 @@ public class BlockGem extends BlockBase{
 
             return META_LOOKUP[meta];
         }
-        
+        @Override
         public String getName()
         {
             return this.name;
